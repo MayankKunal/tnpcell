@@ -1,0 +1,35 @@
+/* Add your custom css styles */
+
+@media(min-width: 1000px)
+{
+  header .container{
+    width: 100%;
+  }
+  
+  #topbar .hidden-xs{
+    margin-right:10px; 
+  }
+}
+
+p{
+  /* line-height: 1.2 !important; */
+  color: black;
+  font-size: 15px;
+}
+
+#logo{
+  height: 60px;
+}
+.nav-main-menu-responsive{
+  height: 60px;
+}
+
+@media(max-width: 770px)
+{
+  #logo img{
+    margin-top: -10px !important;  
+    height: 80px;
+  }
+}
+
+
