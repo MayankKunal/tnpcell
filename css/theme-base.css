@@ -379,7 +379,7 @@ h6.font-parisienne {
 
 #header {
     position: relative;
-    background-color: rgb(99, 118, 161);
+    background-color: #5C8374;
     /* background: #00F260;  fallback for old browsers */
 /* background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
 /*background: linear-gradient(to right, #0575E6, #00F260); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -1626,7 +1626,7 @@ body.wide #header.header-fullwidth nav .main-menu .mega-menu-item .dropdown-menu
 
 
 #header.header-sticky #header-wrap {
-background-color: rgb(99, 118, 161);;
+background-color: #5C8374;;
 /*background: -webkit-linear-gradient(to right, #0575E6, #00F260);  Chrome 10-25, Safari 5.1-6
 background: linear-gradient(to right, #0575E6, #00F260); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
@@ -1904,7 +1904,7 @@ background: linear-gradient(to right, #0575E6, #00F260); W3C, IE 10+/ Edge, Fire
     position: relative;
     /*! z-index: 200; */
     /*! border-bottom: 1px solid #eee; */
-    background-color: rgb(99, 118, 161);
+    background-color: #5C8374;
     /* background-image: linear-gradient(-225deg, rgb(101, 120, 165) 0%, #87A7D9 50%, #DEF3F8 100%); */
 /* background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
 /*background: linear-gradient(to right, #0575E6, #00F260); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -2509,7 +2509,7 @@ body.device-xs .col-md-3 .flickr-widget img {
     FOOTER
 -----------------------------------------------------------------*/
 .footer-back{
-    background-color: #546488;
+    background-color: #183D3D;
 }
 #footer {
     clear: both;
@@ -4508,7 +4508,7 @@ body:not(.no-page-loader) .wrapper,
   height: 3px;
   width: 0%;
   content: "";
-  background-color: #26B8F3;
+  background-color: #183D3D;
 }
 .snip1135 a:after {
 

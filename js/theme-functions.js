@@ -121,24 +121,24 @@ var INSPIRO = {};
                 label: 'smallest',
                 enter: 0,
                 exit: 479
-                }, {
+            }, {
                 label: 'handheld',
                 enter: 480,
                 exit: 767
-                }, {
+            }, {
                 label: 'tablet',
                 enter: 768,
                 exit: 991
-                }, {
+            }, {
                 label: 'laptop',
                 enter: 992,
                 exit: 1199
-                }, {
+            }, {
                 label: 'desktop',
                 enter: 1200,
                 exit: 10000
-                }
-            ]);
+            }
+        ]);
         jRes.addFunc([
             {
                 breakpoint: 'desktop',
@@ -148,7 +148,7 @@ var INSPIRO = {};
                 exit: function () {
                     $body.removeClass('device-lg');
                 }
-                }, {
+            }, {
                 breakpoint: 'laptop',
                 enter: function () {
                     $body.addClass('device-md');
@@ -156,7 +156,7 @@ var INSPIRO = {};
                 exit: function () {
                     $body.removeClass('device-md');
                 }
-                }, {
+            }, {
                 breakpoint: 'tablet',
                 enter: function () {
                     $body.addClass('device-sm');
@@ -164,7 +164,7 @@ var INSPIRO = {};
                 exit: function () {
                     $body.removeClass('device-sm');
                 }
-                }, {
+            }, {
                 breakpoint: 'handheld',
                 enter: function () {
                     $body.addClass('device-xs');
@@ -172,7 +172,7 @@ var INSPIRO = {};
                 exit: function () {
                     $body.removeClass('device-xs');
                 }
-                }, {
+            }, {
                 breakpoint: 'smallest',
                 enter: function () {
                     $body.addClass('device-xxs');
@@ -180,7 +180,7 @@ var INSPIRO = {};
                 exit: function () {
                     $body.removeClass('device-xxs');
                 }
-                }
+            }
         ]);
     };
 
@@ -257,10 +257,10 @@ var INSPIRO = {};
                         margin: Number($sliderCarouselMargins),
                         nav: $sliderCarouseNav,
                         navText: ['<i class="fa fa-arrow-left icon-white"></i>',
-                              '<i class="fa fa-arrow-right icon-white"></i>'],
+                            '<i class="fa fa-arrow-right icon-white"></i>'],
                         autoplay: $sliderCarouseAutoPlay,
-                        autoplayTimeout:1500,
-                        loop : true,
+                        autoplayTimeout: 1500,
+                        loop: true,
                         autoplayHoverPause: true,
                         dots: $sliderCarouseDots,
                         items: 1,
@@ -276,13 +276,13 @@ var INSPIRO = {};
                         margin: Number($sliderCarouselMargins),
                         nav: $sliderCarouseNav,
                         navText: ['<i class="fa fa-arrow-left icon-white"></i>',
-                              '<i class="fa fa-arrow-right icon-white"></i>'],
+                            '<i class="fa fa-arrow-right icon-white"></i>'],
                         autoplay: $sliderCarouseAutoPlay,
-                        autoplayTimeout:1500,
-                        mouseDrag:false,
-                        touchDrag:false,
+                        autoplayTimeout: 1500,
+                        mouseDrag: false,
+                        touchDrag: false,
                         autoplayHoverPause: true,
-                        loop:true,
+                        loop: true,
                         dots: $sliderCarouseDots,
                         video: $sliderCarouseVideo,
                         responsive: {
@@ -328,7 +328,7 @@ var INSPIRO = {};
                     loop: true,
                     nav: true,
                     navText: ['<i class="fa fa-arrow-left icon-white"></i>',
-                              '<i class="fa fa-arrow-right icon-white"></i>'],
+                        '<i class="fa fa-arrow-right icon-white"></i>'],
                     autoplay: true,
                     dots: false,
                     autoplayHoverPause: true,
@@ -391,7 +391,7 @@ var INSPIRO = {};
             if ($('.tab-carousel').parent().hasClass('active')) {
                 $('.tab-carousel').owlCarousel({
                     navText: ['<i class="fa fa-arrow-left icon-white"></i>',
-                              '<i class="fa fa-arrow-right icon-white"></i>'],
+                        '<i class="fa fa-arrow-right icon-white"></i>'],
                     margin: 0,
                     nav: true,
                     dots: false,
@@ -401,7 +401,7 @@ var INSPIRO = {};
                 $('.tabs-navigation li a').click(function () {
                     $('.tab-carousel').owlCarousel({
                         navText: ['<i class="fa fa-arrow-left icon-white"></i>',
-                              '<i class="fa fa-arrow-right icon-white"></i>'],
+                            '<i class="fa fa-arrow-right icon-white"></i>'],
                         margin: 0,
                         nav: true,
                         dots: false,
@@ -485,7 +485,7 @@ var INSPIRO = {};
 
             if ($window.scrollTop() > headerOffset) {
 
-                if ($body.hasClass('device-lg') || $body.hasClass('device-md')|| $body.hasClass('device-sm') || $body.hasClass('device-xs')|| $body.hasClass('device-xxs')) {
+                if ($body.hasClass('device-lg') || $body.hasClass('device-md') || $body.hasClass('device-sm') || $body.hasClass('device-xs') || $body.hasClass('device-xxs')) {
 
                     if (!$header.hasClass("header-no-sticky")) {
                         $header.addClass('header-sticky');
@@ -526,13 +526,13 @@ var INSPIRO = {};
                 $elem.css('height', elemHeight);
 
                 /*if ($body.hasClass('device-lg') || $body.hasClass('device-md')) {
-                	$elem.css('height', elemHeight);
+                    $elem.css('height', elemHeight);
                 }else {
-                	if ($topbar) {
-                		$elem.css('height', elemHeight - (headerHeight + topbarHeight));
-                	} else {
-                		$elem.css('height', elemHeight - (headerHeight));
-                	}
+                    if ($topbar) {
+                        $elem.css('height', elemHeight - (headerHeight + topbarHeight));
+                    } else {
+                        $elem.css('height', elemHeight - (headerHeight));
+                    }
                 }*/
 
             });
@@ -575,7 +575,7 @@ var INSPIRO = {};
     // MAIN MENU FIXES
     //----------------------------------------------------/
 
-    if (!$body.hasClass('device-lg') || !$body.hasClass('device-md') || !$body.hasClass('device-sm') || !$body.hasClass('device-xs')|| !$body.hasClass('device-xxs')) {
+    if (!$body.hasClass('device-lg') || !$body.hasClass('device-md') || !$body.hasClass('device-sm') || !$body.hasClass('device-xs') || !$body.hasClass('device-xxs')) {
 
         if (mainmenu.hasClass('mega-menu')) {
             mainmenuitems.on('click', function () {
@@ -590,7 +590,7 @@ var INSPIRO = {};
     }
 
     INSPIRO.menuFix = function () {
-        if ($body.hasClass('device-lg') || $body.hasClass('device-md') || $body.hasClass('device-sm') || $body.hasClass('device-xs')|| $body.hasClass('device-xxs')) {
+        if ($body.hasClass('device-lg') || $body.hasClass('device-md') || $body.hasClass('device-sm') || $body.hasClass('device-xs') || $body.hasClass('device-xxs')) {
             $('ul.main-menu .dropdown:not(.mega-menu-item) ul ul').each(function (index, element) {
                 if ($window.width() - ($(element).width() + $(element).offset().left) < 0) {
                     $(element).addClass('menu-invert');
@@ -715,8 +715,8 @@ var INSPIRO = {};
                 $acc = $item.parents(classFinder + accordionType);
 
             $item.hasClass(itemActive) ? $acc.hasClass(toogleType) ? ($item.removeClass(itemActive), $link.next(classFinder + itemContent).slideUp("fast")) : ($acc.find(classFinder + accordionItem).removeClass(itemActive), $acc.find(classFinder + itemContent).slideUp("fast")) : ($acc.hasClass(toogleType) || ($acc.find(classFinder + accordionItem).removeClass(itemActive), $acc.find(classFinder + itemContent).slideUp("fast")), $item.addClass(itemActive),
-                    $link.next(classFinder + itemContent).slideToggle("fast")
-                ),
+                $link.next(classFinder + itemContent).slideToggle("fast")
+            ),
                 e.preventDefault();
             return false;
         }));
@@ -746,7 +746,7 @@ var INSPIRO = {};
      * Animations
      * --------------------------------------------------------------------------- */
     INSPIRO.animations = function () {
-        if (dataAnimation.exists() && $body.hasClass('device-lg') || $body.hasClass('device-md') || $body.hasClass('device-sm') || $body.hasClass('device-xs')|| $body.hasClass('device-xxs')) {
+        if (dataAnimation.exists() && $body.hasClass('device-lg') || $body.hasClass('device-md') || $body.hasClass('device-sm') || $body.hasClass('device-xs') || $body.hasClass('device-xxs')) {
             dataAnimation.each(function () {
                 $(this).addClass("animated");
                 var $elem = $(this),
@@ -796,7 +796,7 @@ var INSPIRO = {};
     INSPIRO.parallax = function () {
         if ($parallax.exists() || $(".page-title-parallax")) {
 
-            if ($body.hasClass('device-lg') || $body.hasClass('device-md') || $body.hasClass('device-sm') || $body.hasClass('device-xs')|| $body.hasClass('device-xxs')) {
+            if ($body.hasClass('device-lg') || $body.hasClass('device-md') || $body.hasClass('device-sm') || $body.hasClass('device-xs') || $body.hasClass('device-xxs')) {
                 $.stellar({
                     horizontalScrolling: false,
                     verticalScrolling: true,
@@ -879,7 +879,7 @@ var INSPIRO = {};
 
                 };
 
-                if ($body.hasClass('device-lg') || $body.hasClass('device-md') || $body.hasClass('device-sm') || $body.hasClass('device-xs')|| $body.hasClass('device-xxs')) {
+                if ($body.hasClass('device-lg') || $body.hasClass('device-md') || $body.hasClass('device-sm') || $body.hasClass('device-xs') || $body.hasClass('device-xxs')) {
                     $(elem).appear(function () {
                         setTimeout(function () {
                             progressBarRun();
@@ -963,7 +963,7 @@ var INSPIRO = {};
                         iconsize: [40, 63],
                         iconanchor: [18, 60],
                     },
-                    }];
+                }];
 
                 $elem.gMap({
 
@@ -1010,18 +1010,18 @@ var INSPIRO = {};
 
 
             $elem.isotope({
-                    filter: defaultFilter,
-                    itemSelector: itemElement,
-                    layoutMode: mode,
-                    transitionDuration: '0.6s',
-                    resizesContainer: true,
-                    resizable: true,
-                    animationOptions: {
-                        duration: 400,
-                        queue: !1
-                    }
+                filter: defaultFilter,
+                itemSelector: itemElement,
+                layoutMode: mode,
+                transitionDuration: '0.6s',
+                resizesContainer: true,
+                resizable: true,
+                animationOptions: {
+                    duration: 400,
+                    queue: !1
+                }
 
-                }),
+            }),
 
                 $window.resize(function () {
 
@@ -1062,7 +1062,7 @@ var INSPIRO = {};
                 $(".filter-active-title").empty().append($link.text());
 
 
-                if (!$link.hasClass("ptf-active") &&  !$link.hasClass(".past")) {
+                if (!$link.hasClass("ptf-active") && !$link.hasClass(".past")) {
                     var selector = $link.attr("data-filter");
                     $link.parents(".portfolio-filter").eq(0).find(".ptf-active").removeClass("ptf-active"), $link.addClass("ptf-active"), $elem.isotope({
                         filter: selector
@@ -1070,15 +1070,15 @@ var INSPIRO = {};
 
                 }
                 if ($link.hasClass("past")) {
-                  $(".filter-active-title").empty().append($link.text());
-                  document.getElementsByClassName('pastclass')[0].style.display = "block";
-                  document.getElementsByClassName('heading-center')[1].style.display = "block";
-                  document.getElementsByClassName('isotope portfolio-items')[1].style.display = "block";
+                    $(".filter-active-title").empty().append($link.text());
+                    document.getElementsByClassName('pastclass')[0].style.display = "block";
+                    document.getElementsByClassName('heading-center')[1].style.display = "block";
+                    document.getElementsByClassName('isotope portfolio-items')[1].style.display = "block";
 
-                  var selector = $link.attr("data-filter");
-                  $link.parents(".portfolio-filter").eq(0).find(".ptf-active").removeClass("ptf-active"), $link.addClass(".past"), $elem.isotope({
-                      filter: selector
-                  });
+                    var selector = $link.attr("data-filter");
+                    $link.parents(".portfolio-filter").eq(0).find(".ptf-active").removeClass("ptf-active"), $link.addClass(".past"), $elem.isotope({
+                        filter: selector
+                    });
                 }
 
                 e.preventDefault();
